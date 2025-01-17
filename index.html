@@ -17,6 +17,7 @@
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
+            margin: 0 10px;
         }
     </style>
 </head>
@@ -27,20 +28,18 @@
         <p id="phrase2">I'm hosted with GitHub Pages</p>
     </div>
 
-    <button onclick="toggleLanguage()">Toggle Language</button>
+    <button onclick="setLanguage('en')">Inglês</button>
+    <button onclick="setLanguage('pt')">Português</button>
 
     <script>
-        let isEnglish = true;
-
-        function toggleLanguage() {
-            if (isEnglish) {
+        function setLanguage(language) {
+            if (language === 'pt') {
                 document.getElementById("phrase1").innerText = "Olá Mundo";
                 document.getElementById("phrase2").innerText = "Estou hospedado no GitHub Pages";
             } else {
                 document.getElementById("phrase1").innerText = "Hello World";
                 document.getElementById("phrase2").innerText = "I'm hosted with GitHub Pages";
             }
-            isEnglish = !isEnglish;
         }
     </script>
 
