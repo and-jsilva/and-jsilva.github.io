@@ -36,8 +36,8 @@
       <span class="visually-hidden">Toggle Dropdown</span>
     </button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">English</a></li>
-      <li><a class="dropdown-item" href="#">Português</a></li>
+      <li><button class="dropdown-item" href="#">English</a></li>
+      <li><button class="dropdown-item" href="#">Português</a></li>
     </ul>
   </div>
     <button onclick="setLanguage('English')">English</button>
@@ -45,7 +45,8 @@
 
     <script>
         window.onload = function(){
-        document.getElementById('linguagem').innerHTML = language;
+        var linguagem = language.length
+        document.getElementById('linguagem').innerHTML = linguagem;
         }
 
         function setLanguage(language) {
