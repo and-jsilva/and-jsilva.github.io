@@ -1,7 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Toggle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World! This is a test.</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+    <div class="container">
+        <p id="phrase1">Hello World</p>
+        <p id="phrase2">I'm hosted with GitHub Pages</p>
+    </div>
+
+    <button onclick="toggleLanguage()">Toggle Language</button>
+
+    <script>
+        let isEnglish = true;
+
+        function toggleLanguage() {
+            if (isEnglish) {
+                document.getElementById("phrase1").innerText = "Olá Mundo";
+                document.getElementById("phrase2").innerText = "Estou hospedado no GitHub Pages";
+            } else {
+                document.getElementById("phrase1").innerText = "Hello World";
+                document.getElementById("phrase2").innerText = "I'm hosted with GitHub Pages";
+            }
+            isEnglish = !isEnglish;
+        }
+    </script>
+
 </body>
 </html>
