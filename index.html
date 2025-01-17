@@ -45,9 +45,6 @@
     <button onclick="setLanguage('Português')">Português</button>
 
     <script>
-        var linguagem = language.length
-        document.getElementById('linguagem').innerHTML = linguagem;
-
         function setLanguage(language) {
             if (language === 'Português') {
                 document.getElementById("phrase1").innerText = "Olá Mundo";
@@ -56,6 +53,8 @@
                 document.getElementById("phrase1").innerText = "Hello World";
                 document.getElementById("phrase2").innerText = "I'm hosted with GitHub Pages";
             }
+            var linguagem = language.length
+            document.getElementById('linguagem').innerHTML = linguagem;
         }
     </script>
 
