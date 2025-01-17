@@ -40,8 +40,8 @@
       <li><a class="dropdown-item" href="#">Português</a></li>
     </ul>
   </div>
-    <button onclick="setLanguage('en')">English</button>
-    <button onclick="setLanguage('pt')">Português</button>
+    <button onclick="setLanguage('English')">English</button>
+    <button onclick="setLanguage('Português')">Português</button>
 
     <script>
         window.onload = function(){
@@ -49,7 +49,7 @@
         }
 
         function setLanguage(language) {
-            if (language === 'pt') {
+            if (language === 'Português') {
                 document.getElementById("phrase1").innerText = "Olá Mundo";
                 document.getElementById("phrase2").innerText = "Estou hospedado no GitHub Pages";
             } else {
