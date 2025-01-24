@@ -30,7 +30,6 @@
         <p id="linguagem"></p>
     </div>
 
-    <!-- Example split danger button -->
 <div class="btn-group">
     <button type="button" class="btn btn-secondary" id="linguagem"><p id="linguagem"></p></button>
     <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
@@ -52,9 +51,11 @@
                 document.getElementById("phrase1").innerText = "Olá Mundo";
                 document.getElementById("phrase2").innerText = "Estou hospedado no GitHub Pages";
                 language = 'Português'
+                document.getElementById('linguagem').innerHTML = language;
             } else {
                 document.getElementById("phrase1").innerText = "Hello World";
                 document.getElementById("phrase2").innerText = "I'm hosted with GitHub Pages";
+                document.getElementById('linguagem').innerHTML = language;
             }
         }
     </script>
